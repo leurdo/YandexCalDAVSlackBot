@@ -161,7 +161,6 @@ class CalDAVSlackBot
     function send_to_slack($data) {
         try {
             $json = json_encode($data);
-            echo $json;
 
             $curl = curl_init();
             curl_setopt_array($curl, array(
